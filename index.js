@@ -19,3 +19,19 @@ function factorial(n) {
 }
 
 console.log(factorial(5));
+
+// Crea una función que ordene un array de números de manera
+// ascendente. Puedes utilizar funciones flecha.
+
+let ordenarArray = (array) => array.sort((a, b) => a - b);
+
+console.log(ordenarArray([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]));
+
+// Desarrolla una función que cuente la cantidad de palabras en
+// una cadena dada. Puedes usar funciones anónimas.
+
+let cuentaPalabras = function(cadena) {
+    return cadena.split(' ').length;
+}
+
+console.log(cuentaPalabras("Hola, ¿cómo estás?"));
