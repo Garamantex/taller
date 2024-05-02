@@ -63,3 +63,15 @@ function esPalindromo(palabra) {
 }
 
 console.log(esPalindromo("reconocer"));
+
+// Desarrolla una función que calcule el monto de impuestos a pagar según un
+// porcentaje dado. Puedes usar funciones autoejecutables.
+
+let calculaImpuestos = (function() {
+    return function(monto, porcentaje) {
+        return monto * (porcentaje / 100);
+    }
+})();
+
+console.log(calculaImpuestos(1000, 21));
+
