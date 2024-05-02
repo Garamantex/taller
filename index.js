@@ -35,3 +35,12 @@ let cuentaPalabras = function(cadena) {
 }
 
 console.log(cuentaPalabras("Hola, ¿cómo estás?"));
+
+// Escribe una función para calcular el área de un círculo. Puedes
+// utilizar funciones declarativas.
+
+function calcularAreaCirculo(radio) {
+    return Math.PI * Math.pow(radio, 2);
+}
+
+console.log(calcularAreaCirculo(5));
