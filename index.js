@@ -85,3 +85,19 @@ function tablaMultiplicar(numero) {
 }
 
 tablaMultiplicar(5);
+
+// Crea una función que valide si una contraseña cumple con ciertos criterios
+// (longitud, caracteres especiales, etc.). Puedes utilizar métodos de
+// funciones.
+
+function validaContraseña(contraseña) {
+    let tieneLongitudAdecuada = contraseña.length >= 8;
+    let tieneMayuscula = /[A-Z]/.test(contraseña);
+    let tieneMinuscula = /[a-z]/.test(contraseña);
+    let tieneNumero = /[0-9]/.test(contraseña);
+    let tieneCaracterEspecial = /[!@#$%^&*]/.test(contraseña);
+
+    return tieneLongitudAdecuada && tieneMayuscula && tieneMinuscula && tieneNumero && tieneCaracterEspecial;
+}
+
+console.log(validaContraseña("Contraseña1!"));
