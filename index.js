@@ -54,3 +54,12 @@ let filtraPares = function(array) {
 
 console.log(filtraPares([1, 2, 3, 4, 5, 6]));
 
+// Implementa una función que verifique si una palabra es un palíndromo (se
+// lee igual de izquierda a derecha que de derecha a izquierda).
+
+function esPalindromo(palabra) {
+    let palabraReversa = palabra.split('').reverse().join('');
+    return palabra === palabraReversa;
+}
+
+console.log(esPalindromo("reconocer"));
