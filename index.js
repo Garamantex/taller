@@ -44,3 +44,13 @@ function calcularAreaCirculo(radio) {
 }
 
 console.log(calcularAreaCirculo(5));
+
+// Crea una función que filtre los números pares de un array. Puedes utilizar
+// funciones de expresión.
+
+let filtraPares = function(array) {
+    return array.filter(numero => numero % 2 === 0);
+}
+
+console.log(filtraPares([1, 2, 3, 4, 5, 6]));
+
