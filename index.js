@@ -75,3 +75,13 @@ let calculaImpuestos = (function() {
 
 console.log(calculaImpuestos(1000, 21));
 
+// Escribe una función que genere la tabla de multiplicar de un número
+// específico.
+
+function tablaMultiplicar(numero) {
+    for(let i = 1; i <= 10; i++) {
+        console.log(`${numero} x ${i} = ${numero * i}`);
+    }
+}
+
+tablaMultiplicar(5);
